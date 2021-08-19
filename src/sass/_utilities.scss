@@ -14,16 +14,20 @@
     align-items: center;
 }
 
-.bg-dark {
+.txt-center {
+    text-align: center;
+}
+
+.bg--dark {
     color: var(--clr-neutral-100);
     background: var(--clr-neutral-900);
 }
 
-.bg-accent {
+.bg--accent {
     position: relative;
 }
 
-.bg-accent::after {
+.bg--accent::after {
     content: "";
     position: absolute;
     color: var(--clr-neutral-900);
@@ -33,10 +37,10 @@
     z-index: -1;
 }
 
-.btn-accent {
+.btn--accent {
     background: var(--btn-bg, var(--clr-accent-400));
 }
 
-.btn-light {
+.btn--light {
     background: var(--btn-bg, var(--clr-neutral-100));
 }
