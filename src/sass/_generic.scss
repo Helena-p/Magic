@@ -40,15 +40,14 @@ body {
 }
 
 h1 {
-    font-weight: 400;
+    font-weight: var(--fw-400);
 }
 
-h1 span {
-    font-weight: 700;
+p span {
+    font-weight: var(--fw-700);
 }
 
 a {
-    color: var(--clr-accent-500);
     text-decoration: none;
     font-weight: var(--fw-700);
 }
@@ -59,7 +58,7 @@ a {
     font-weight: 700;
     font-size: 1.125rem;
     padding: 0.75em 1.5em;
-    background: var(--clr-accent-400);
+    background-color: var(--clr-accent-400);
     color: var(--clr-neutral-900);
 }
 

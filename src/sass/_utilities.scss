@@ -1,3 +1,12 @@
 .shadow {
     box-shadow: var(--box-shadow);
 }
+
+.flow-content > * + * {
+    margin-top: var(--flow-space, var(--spacer));
+}
+
+.bg-dark {
+    color: var(--clr-neutral-100);
+    background: var(--clr-neutral-900);
+}
