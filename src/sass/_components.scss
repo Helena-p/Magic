@@ -28,6 +28,29 @@ header {
     }
 }
 
+/* ----- HERO SECTION ----- */
+.hero img {
+    transform: translateY(2em);
+}
+
+@media (min-width: 40em) {
+    .hero {
+        padding: 0;
+    }
+}
+
+/* ----- TESTIMONIAL ----- */
+.testimonial {
+    padding: 3rem 2rem;
+}
+
+.testimonial :first-of-type {
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* ----- CTA ----- */
+
 .cta {
     background-image: var(--img, url(/src/img/cta-bg-1.jpg));
     background-size: cover;
