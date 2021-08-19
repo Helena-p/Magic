@@ -18,3 +18,25 @@
     color: var(--clr-neutral-100);
     background: var(--clr-neutral-900);
 }
+
+.bg-accent {
+    position: relative;
+}
+
+.bg-accent::after {
+    content: "";
+    position: absolute;
+    color: var(--clr-neutral-900);
+    background: var(--clr-accent-400);
+    inset: 0;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+.btn-accent {
+    background: var(--btn-bg, var(--clr-accent-400));
+}
+
+.btn-light {
+    background: var(--btn-bg, var(--clr-neutral-100));
+}

@@ -27,3 +27,10 @@ header {
         top: 0;
     }
 }
+
+.cta1 {
+    background-image: url(/src/img/cta-bg-1.jpg);
+    background-size: cover;
+    text-align: center;
+    z-index: -4;
+}
