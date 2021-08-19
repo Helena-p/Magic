@@ -157,6 +157,10 @@ header {
   margin-top: var(--flow-space, var(--spacer));
 }
 
+.flow-content--large {
+  --flow-space: 3rem;
+}
+
 .bg-dark {
   color: var(--clr-neutral-100);
   background: var(--clr-neutral-900);
