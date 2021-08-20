@@ -18,6 +18,10 @@
     text-align: center;
 }
 
+.m-auto {
+    margin: auto;
+}
+
 .bg--dark {
     color: var(--clr-neutral-100);
     background: var(--clr-neutral-900);
@@ -50,15 +54,19 @@
 }
 
 .section-title {
-    width: max-content;
+    max-width: max-content;
     text-transform: uppercase;
     background-color: var(--clr-neutral-900);
-    padding: 0.4rem;
-    font-weight: var(--fw-700);
+    padding: 0.5rem;
+    font-weight: var(--fw-400);
     letter-spacing: 1px;
-    line-height: 1.375rem;
+    line-height: 1.7rem;
     text-align: center;
-    color: var(--clr-accent-400);
+    color: var(--title-fg, var(--clr-accent-400));
+}
+
+.cta1 h2 {
+    --title-fg: var(--clr-neutral-100);
 }
 
 .h2 {
