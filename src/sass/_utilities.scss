@@ -73,3 +73,19 @@
     font-size: var(--fs-700);
     line-height: 2.8rem;
 }
+
+.border [decoration] {
+    position: relative;
+
+    ::before {
+        content: "";
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        background: var(--clr-accent-400);
+        position: absolute;
+        z-index: -1;
+        top: -0.6rem;
+        left: -0.6rem;
+    }
+}
