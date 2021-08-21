@@ -162,6 +162,9 @@ header {
   }
 }
 /* ----- MASTERING SECTION ----- */
+#mastering {
+  background-image: url(/src/img/cta-bg.jpg);
+}
 #mastering h2 {
   color: var(--accent);
 }
@@ -219,12 +222,12 @@ header {
 .cta {
   background-size: cover;
   background-repeat: no-repeat;
+  background-blend-mode: multiply;
   text-align: center;
 }
 
 .cta.cta1 {
   background-image: url(/src/img/cta-bg-1.jpg);
-  z-index: -4;
 }
 
 .cta.cta2 {
@@ -294,25 +297,6 @@ header {
   --accent: var(--clr-neutral-100);
   --btn-border: var(--clr-neutral-100);
   --btn-fg: var(--clr-neutral-100);
-}
-
-.bg--accent-secondary {
-  position: relative;
-  --accent: var(--clr-neutral-100);
-  --btn-border: var(--clr-neutral-100);
-  --btn-fg: var(--clr-neutral-100);
-}
-
-/* Mix-blend-mode not working properly nested
-    within selector */
-.bg--accent-secondary::after {
-  content: "";
-  position: absolute;
-  color: var(--clr-neutral-900);
-  background-color: var(--clr-accent-400);
-  inset: 0;
-  mix-blend-mode: multiply;
-  z-index: -1;
 }
 
 .section-title {

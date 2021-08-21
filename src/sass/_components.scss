@@ -42,8 +42,11 @@ header {
 }
 
 /* ----- MASTERING SECTION ----- */
-#mastering h2 {
-    color: var(--accent);
+#mastering {
+    background-image: url(/src/img/cta-bg.jpg);
+    h2 {
+        color: var(--accent);
+    }
 }
 
 /* ----- HERO SECTION ----- */
@@ -103,12 +106,13 @@ header {
 .cta {
     background-size: cover;
     background-repeat: no-repeat;
+    background-blend-mode: multiply;
     text-align: center;
 }
 
 .cta.cta1 {
     background-image: url(/src/img/cta-bg-1.jpg);
-    z-index: -4;
+    // z-index: -4;
 }
 
 .cta.cta2 {

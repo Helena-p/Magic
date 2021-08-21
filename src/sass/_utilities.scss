@@ -43,25 +43,6 @@
     --btn-fg: var(--clr-neutral-100);
 }
 
-.bg--accent-secondary {
-    position: relative;
-    --accent: var(--clr-neutral-100);
-    --btn-border: var(--clr-neutral-100);
-    --btn-fg: var(--clr-neutral-100);
-}
-
-/* Mix-blend-mode not working properly nested
-    within selector */
-.bg--accent-secondary::after {
-    content: "";
-    position: absolute;
-    color: var(--clr-neutral-900);
-    background-color: var(--clr-accent-400);
-    inset: 0;
-    mix-blend-mode: multiply;
-    z-index: -1;
-}
-
 .section-title {
     display: inline-block;
     text-transform: uppercase;
