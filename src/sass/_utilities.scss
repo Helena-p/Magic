@@ -35,6 +35,8 @@
     position: relative;
 }
 
+/* Mix-blend-mode not working properly nested
+    within selector */
 .bg--accent::after {
     content: "";
     position: absolute;
@@ -50,10 +52,12 @@
 }
 
 .btn--accent {
+    --btn-fg: var(--clr-accent-500);
     background: var(--btn-bg, var(--clr-accent-400));
 }
 
 .btn--light {
+    --btn-fg: var(--clr-neutral-900);
     background: var(--btn-bg, var(--clr-neutral-100));
 }
 

@@ -85,7 +85,7 @@ header {
 /* ----- CTA ----- */
 
 .cta {
-    background-image: var(--img, url(/src/img/cta-bg-1.jpg));
+    background-image: var(--img);
     background-size: cover;
     text-align: center;
 }
@@ -97,4 +97,23 @@ header {
 
 .cta2 {
     --img: url(/src/img/cta-bg-2.jpg);
+}
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 0.75em 1.5em;
+    background-color: var(--btn-bg);
+    color: var(--clr-neutral-900);
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    border: 3px solid var(--btn-fg);
+    color: var(--btn-fg);
+    background: transparent;
 }
