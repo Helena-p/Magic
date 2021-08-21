@@ -118,7 +118,7 @@ section {
   }
 
   .flex > * + * {
-    margin: 0 0 0 var(--spacer);
+    margin: 0 0 0 var(--gap, var(--spacer));
   }
 }
 /* ----- NAVIGATION ----- */
@@ -161,6 +161,11 @@ header {
     opacity: 1;
   }
 }
+/* ----- MASTERING SECTION ----- */
+#mastering h2 {
+  color: var(--accent);
+}
+
 /* ----- HERO SECTION ----- */
 .hero img {
   transform: translateY(2em);
@@ -172,15 +177,13 @@ header {
   }
 }
 /* ----- TESTIMONIAL ----- */
-.testimonials__content {
+.testimonials {
   max-width: 76.7rem;
+  --gap: 4rem;
 }
 
 .testimonial {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 3rem 1rem;
+  padding: calc(var(--spacer) * 2);
   max-width: 20.125rem;
 }
 .testimonial > p {
@@ -191,6 +194,12 @@ header {
 }
 .testimonial :nth-child(2) {
   align-self: end;
+}
+
+.testimonial .name {
+  margin-top: 4rem;
+  font-weight: var(--fw-700);
+  color: var(--accent);
 }
 
 .cards {
@@ -256,10 +265,6 @@ header {
 
 .m-auto {
   margin: auto;
-}
-
-.text--accent {
-  color: var(--clr-accent-400);
 }
 
 [class*=bg-] {

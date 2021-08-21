@@ -41,6 +41,11 @@ header {
     }
 }
 
+/* ----- MASTERING SECTION ----- */
+#mastering h2 {
+    color: var(--accent);
+}
+
 /* ----- HERO SECTION ----- */
 .hero img {
     transform: translateY(2em);
@@ -54,16 +59,12 @@ header {
 
 /* ----- TESTIMONIAL ----- */
 .testimonials {
-    &__content {
-        max-width: 76.7rem;
-    }
+    max-width: 76.7rem;
+    --gap: 4rem;
 }
-.testimonial {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
-    padding: 3rem 1rem;
+.testimonial {
+    padding: calc(var(--spacer) * 2);
     max-width: 20.125rem;
 
     & > p {
@@ -76,6 +77,12 @@ header {
     :nth-child(2) {
         align-self: end;
     }
+}
+
+.testimonial .name {
+    margin-top: 4rem;
+    font-weight: var(--fw-700);
+    color: var(--accent);
 }
 
 .cards {
