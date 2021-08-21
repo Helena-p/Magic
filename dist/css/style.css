@@ -167,6 +167,14 @@ header {
 }
 
 /* ----- HERO SECTION ----- */
+.hero {
+  margin-top: 3rem;
+  --gap: 4.5rem;
+}
+.hero p > a {
+  color: var(--clr-accent-500);
+}
+
 .hero img {
   transform: translateY(2em);
 }
