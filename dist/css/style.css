@@ -214,22 +214,23 @@ header {
   --img: url(/src/img/cta-bg-2.jpg);
 }
 
+/* ----- BUTTON ----- */
 .btn {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 700;
   font-size: 1.125rem;
   padding: 0.75em 1.5em;
-  background-color: var(--btn-bg);
-  color: var(--clr-neutral-900);
+  background-color: var(--accent, var(--clr-accent-400));
+  color: var(--fg, var(--clr-neutral-900));
   border: 2px solid transparent;
   cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
-  border: 3px solid var(--btn-fg);
-  color: var(--btn-fg);
+  border: 3px solid var(--btn-border, var(--clr-neutral-900));
+  color: var(--btn-fg, var(--clr-neutral-900));
   background: transparent;
 }
 
@@ -257,43 +258,45 @@ header {
   margin: auto;
 }
 
-.bg--dark {
-  color: var(--clr-neutral-100);
-  background: var(--clr-neutral-900);
-}
-
 .text--accent {
   color: var(--clr-accent-400);
 }
 
+[class*=bg-] {
+  color: var(--fg);
+  background: var(--bg);
+}
+
+.bg--dark {
+  --fg: var(--clr-neutral-100);
+  --bg: var(--clr-neutral-900);
+  --accent: var(--clr-accent-400);
+  --btn-border: var(--clr-accent-500);
+  --btn-fg: var(--clr-accent-500);
+}
+
 .bg--accent {
+  --fg: var(--clr-neutral-900);
+  --bg: var(--clr-accent-400);
+  --accent: var(--clr-neutral-100);
+  --btn-border: var(--clr-neutral-100);
+  --btn-fg: var(--clr-neutral-100);
+}
+
+.bg--light {
   position: relative;
 }
 
 /* Mix-blend-mode not working properly nested
     within selector */
-.bg--accent::after {
+.bg--light::after {
   content: "";
   position: absolute;
-  color: var(--clr-neutral-900);
-  background: var(--clr-accent-400);
+  --fg: var(--clr-neutral-900);
+  --bg: var(--clr-accent-400);
   inset: 0;
   mix-blend-mode: multiply;
   z-index: -1;
-}
-
-.bg--accent-dark {
-  background: var(--clr-accent-400);
-}
-
-.btn--accent {
-  --btn-fg: var(--clr-accent-500);
-  background: var(--btn-bg, var(--clr-accent-400));
-}
-
-.btn--light {
-  --btn-fg: var(--clr-neutral-900);
-  background: var(--btn-bg, var(--clr-neutral-100));
 }
 
 .section-title {
