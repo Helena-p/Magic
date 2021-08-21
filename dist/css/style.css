@@ -264,7 +264,7 @@ header {
 
 [class*=bg-] {
   color: var(--fg);
-  background: var(--bg);
+  background-color: var(--bg);
 }
 
 .bg--dark {
@@ -283,17 +283,20 @@ header {
   --btn-fg: var(--clr-neutral-100);
 }
 
-.bg--light {
+.bg--accent-secondary {
   position: relative;
+  --accent: var(--clr-neutral-100);
+  --btn-border: var(--clr-neutral-100);
+  --btn-fg: var(--clr-neutral-100);
 }
 
 /* Mix-blend-mode not working properly nested
     within selector */
-.bg--light::after {
+.bg--accent-secondary::after {
   content: "";
   position: absolute;
-  --fg: var(--clr-neutral-900);
-  --bg: var(--clr-accent-400);
+  color: var(--clr-neutral-900);
+  background-color: var(--clr-accent-400);
   inset: 0;
   mix-blend-mode: multiply;
   z-index: -1;
@@ -302,17 +305,13 @@ header {
 .section-title {
   display: inline-block;
   text-transform: uppercase;
-  background-color: var(--clr-neutral-900);
+  background-color: var(--fg, var(--clr-neutral-900));
+  color: var(--accent, var(--clr-accent-400));
   padding: 0.5rem;
   font-weight: var(--fw-400);
   letter-spacing: 1px;
   line-height: 1.7rem;
   text-align: center;
-  color: var(--title-fg, var(--clr-accent-400));
-}
-
-.cta1 h2 {
-  --title-fg: var(--clr-neutral-100);
 }
 
 .h2 {
