@@ -223,12 +223,12 @@ header {
 }
 
 .cta1 {
-  background-image: url(/src/img/cta-bg-1.jpg);
+  background-image: url(../src/img/cta-bg-1.jpg);
   z-index: -4;
 }
 
 .cta2 {
-  background-image: url(/src/img/cta-bg-2.jpg);
+  background-image: url(src/img/cta-bg-2.jpg);
 }
 
 /* ----- BUTTON ----- */
