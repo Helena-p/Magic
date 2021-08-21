@@ -332,15 +332,18 @@ header {
   line-height: 2.8rem;
 }
 
-.border [decoration] {
+.border {
   position: relative;
 }
-.border [decoration] ::before {
+.border:nth-of-type(2n) {
+  --accent: var(--clr-neutral-900);
+}
+.border ::before {
   content: "";
   display: block;
   width: 5rem;
   height: 5rem;
-  background: var(--clr-accent-400);
+  background: var(--accent, var(--clr-accent-400));
   position: absolute;
   z-index: -2;
   top: -0.6rem;
