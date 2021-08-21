@@ -101,18 +101,18 @@ header {
 /* ----- CTA ----- */
 
 .cta {
-    background-image: var(--img, url(/src/img/cta-bg-1.jpg));
     background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
 }
 
 .cta1 {
-    --img: url(/src/img/cta-bg-1.jpg);
+    background-image: url(/src/img/cta-bg-1.jpg);
     z-index: -4;
 }
 
 .cta2 {
-    --img: url(/src/img/cta-bg-2.jpg);
+    background-image: url(/src/img/cta-bg-2.jpg);
 }
 
 /* ----- BUTTON ----- */
