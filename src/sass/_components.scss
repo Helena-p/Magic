@@ -43,7 +43,7 @@ header {
 
 /* ----- MASTERING SECTION ----- */
 #mastering {
-    background-image: url(..src/img/cta-bg.jpg);
+    background-image: url(../../src/img/cta-bg.jpg);
     h2 {
         color: var(--accent);
     }
@@ -111,11 +111,11 @@ header {
 }
 
 .cta.cta1 {
-    background-image: url(..src/img/cta-bg-1.jpg);
+    background-image: url(../../src/img/cta-bg-1.jpg);
 }
 
 .cta.cta2 {
-    background-image: url(..src/img/cta-bg-2.jpg);
+    background-image: url(../../src/img/cta-bg-2.jpg);
 }
 
 /* ----- BUTTON ----- */
