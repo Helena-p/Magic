@@ -4,6 +4,10 @@
     margin-top: 3rem;
     --gap: 4.5rem;
 
+    &__text {
+        align-self: center;
+    }
+
     p > a {
         color: var(--clr-accent-500);
     }

@@ -125,6 +125,9 @@ h1 {
   margin-top: 3rem;
   --gap: 4.5rem;
 }
+.hero__text {
+  align-self: center;
+}
 .hero p > a {
   color: var(--clr-accent-500);
 }
