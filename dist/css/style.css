@@ -1,11 +1,11 @@
 :root {
   --spacer-100: 1rem;
-  --clr-neutral-900: #171717;
-  --clr-neutral-700: #333;
-  --clr-neutral-300: #cfcfcf;
-  --clr-neutral-100: #fff;
-  --clr-accent-500: #00986a;
-  --clr-accent-400: #59e89c;
+  --clr-neutral-900: hsl(0, 0%, 9%);
+  --clr-neutral-700: hsl(0, 0%, 20%);
+  --clr-neutral-300: hsl(0, 0%, 81%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-accent-500: hsl(162, 100%, 30%);
+  --clr-accent-400: hsl(148, 76%, 63%);
   --font-fam-primary: "PT Sans", sans-serif;
   --font-styl-700: 2.25rem;
   --font-styl-600: 1.5rem;
