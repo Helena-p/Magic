@@ -1,0 +1,10 @@
+@mixin background-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin media-query($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}

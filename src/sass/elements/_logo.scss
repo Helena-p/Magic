@@ -1,0 +1,14 @@
+@use "../tools" as *;
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 1.8rem;
+    left: 2rem;
+    opacity: 0;
+
+    @include media-query(40em) {
+        opacity: 1;
+    }
+}

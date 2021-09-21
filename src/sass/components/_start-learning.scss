@@ -1,0 +1,25 @@
+@use "../tools" as *;
+
+/* ----- MASTERING SECTION ----- */
+.mastering {
+    background-image: url(../../src/img/cta-bg.jpg);
+    h2 {
+        color: var(--accent);
+    }
+}
+
+/* ----- START LEARNING ----- */
+
+.start-learning {
+    @include background-img;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+
+.start-learning.start-learning1 {
+    background-image: url(../../src/img/cta-bg-1.jpg);
+}
+
+.start-learning.start-learning2 {
+    background-image: url(../../src/img/cta-bg-2.jpg);
+}

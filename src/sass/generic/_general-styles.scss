@@ -1,3 +1,5 @@
+@use "../tools" as *;
+
 *,
 *::before,
 *::after {
@@ -45,62 +47,22 @@ html {
 }
 
 body {
-    font-family: var(--ff-primary);
-    font-size: var(--fs-500);
-    font-weight: var(--fw-400);
+    font-family: var(--font-fam-primary);
+    font-size: var(--font-styl-500);
+    font-weight: var(--font-weight-400);
     color: var(--clr-neutral-900);
     margin: 0;
 }
 
-h1 {
-    font-weight: var(--fw-400);
-}
-
-p span {
-    font-weight: var(--fw-700);
-}
-
 a {
     text-decoration: none;
-    font-weight: var(--fw-700);
-}
-
-.container {
-    padding: 0 var(--spacer);
-    max-width: 70rem;
-    margin: 0 auto;
+    font-weight: var(--font-weight-700);
 }
 
 section {
     padding: 4.125rem 0;
-}
 
-@media (min-width: 40em) {
-    section {
+    @include media-query(40em) {
         padding: 8.125rem 0;
-    }
-}
-
-.flex {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex > * + * {
-    margin: calc(var(--spacer) * 3) 0 0 0;
-}
-
-@media (min-width: 40em) {
-    .flex:not(.testimonial) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .flex > * {
-        flex-basis: 100%;
-    }
-
-    .flex > * + * {
-        margin: 0 0 0 var(--gap, var(--spacer));
     }
 }
