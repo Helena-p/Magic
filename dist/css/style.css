@@ -7,11 +7,11 @@
   --clr-accent-500: hsl(162, 100%, 30%);
   --clr-accent-400: hsl(148, 76%, 63%);
   --font-fam-primary: "PT Sans", sans-serif;
-  --font-styl-700: 2.25rem;
-  --font-styl-600: 1.5rem;
-  --font-styl-500: 1.25rem;
-  --font-styl-400: 1.125rem;
-  --font-styl-300: 0.9375rem;
+  --font-size-700: 2.25rem;
+  --font-size-600: 1.5rem;
+  --font-size-500: 1.25rem;
+  --font-size-400: 1.125rem;
+  --font-size-300: 0.9375rem;
   --font-weight-700: 700;
   --font-weight-400: 400;
   --box-shadow-100: 0 0.25em 1.5em rgba(0, 0, 0, 0.15);
@@ -64,7 +64,7 @@ html {
 }
 body {
   font-family: var(--font-fam-primary);
-  font-size: var(--font-styl-500);
+  font-size: var(--font-size-500);
   font-weight: var(--font-weight-400);
   color: var(--clr-neutral-900);
   margin: 0;
@@ -103,18 +103,18 @@ h1 {
 }
 
 .section__title {
-  display: inline-block;
   text-transform: uppercase;
   background-color: var(--fg, var(--clr-neutral-900));
   color: var(--accent, var(--clr-accent-400));
   padding: 0.5rem;
-  font-weight: var(--font-weight-400);
   letter-spacing: 1px;
   line-height: 1.7rem;
   text-align: center;
+  display: inline-block;
+  font-weight: var(--font-weight-400);
 }
 .section__subtitle {
-  font-size: var(--font-styl-700);
+  font-size: var(--font-size-700);
   line-height: 2.8rem;
 }
 .section__subtitle b {
@@ -127,6 +127,12 @@ h1 {
 }
 .hero__text {
   align-self: center;
+  display: grid;
+}
+@media (min-width: 37.5em) {
+  .hero__text {
+    padding-bottom: 2.4rem;
+  }
 }
 .hero p > a {
   color: var(--clr-accent-500);
@@ -177,7 +183,7 @@ header {
   max-width: 20.125rem;
 }
 .testimonial > p {
-  font-size: var(--font-styl-500);
+  font-size: var(--font-size-500);
   font-style: italic;
   font-weight: 300;
   line-height: 2.1875;
@@ -240,6 +246,10 @@ header {
   background: transparent;
 }
 
+.hero__button {
+  place-self: center;
+}
+
 .shadow {
   box-shadow: var(--box-shadow-100);
 }
@@ -269,6 +279,9 @@ header {
   .flex:not(.testimonial) {
     flex-direction: row;
     justify-content: space-between;
+  }
+  .flex .hero__text {
+    display: block;
   }
   .flex > * {
     flex-basis: 100%;

@@ -32,6 +32,10 @@
             justify-content: space-between;
         }
 
+        .hero__text {
+            display: block;
+        }
+
         & > * {
             flex-basis: 100%;
         }
