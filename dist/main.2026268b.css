@@ -205,7 +205,7 @@ header {
 
 /* ----- MASTERING SECTION ----- */
 .mastering {
-  background-image: url(../../src/img/cta-bg.jpg);
+  background-image: url(/cta-bg.bf852686.jpg);
 }
 .mastering h2 {
   color: var(--accent);
@@ -220,11 +220,11 @@ header {
 }
 
 .start-learning.start-learning1 {
-  background-image: url(../../src/img/cta-bg-1.jpg);
+  background-image: url(/cta-bg-1.042c877b.jpg);
 }
 
 .start-learning.start-learning2 {
-  background-image: url(../../src/img/cta-bg-2.jpg);
+  background-image: url(/cta-bg-2.28ac0225.jpg);
 }
 
 .button {
@@ -342,4 +342,4 @@ header {
   left: -0.6rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=/main.2026268b.css.map */
