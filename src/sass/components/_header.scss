@@ -45,7 +45,7 @@
 }
 
 header {
-    padding: var(--spacer-100) 0;
+    padding: 0 0 0.5rem;
 
     @include media-query(40em) {
         position: sticky;
