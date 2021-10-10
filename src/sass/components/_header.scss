@@ -29,6 +29,7 @@
 /* ----- NAVIGATION ----- */
 .nav-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
 
@@ -52,4 +53,8 @@ header {
         z-index: 1000;
         top: 0;
     }
+}
+
+.hero__button {
+    place-self: center;
 }

@@ -1,14 +1,9 @@
 @use "../tools" as *;
 
-h1 {
-    font-weight: var(--font-weight-400);
-}
-
 .section {
     &__title {
         @include main-title;
         display: inline-block;
-        font-weight: var(--font-weight-400);
     }
 
     &__subtitle {
